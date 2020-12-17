@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 de boca</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <article id="ranking"></article>
+    <main id="game-container">
+        <h1 id="title">21 de boca</h1>
+        <div id="itens-container">
+            
+            <form id="form-container" action method="POST">
+                <p id="player1">JOGADOR 1 VS</p> 
+                
+                <select name="players" id="players" onchange="selectRival()">
+                    <option value="player2" >JOGADOR 2</option>
+                    <option value="com" selected="selected">COMPUTADOR</option>
+                </select>
+                
+            </form>
+            <p id="playing">Faça sua jogada</p>
+            
+            <div id="btns-container">
+                <button type="button" id="btn-start" onclick="playGame()">JOGAR</button>
+                <button type="button" id="btn-restart" onclick="restartGame()">RESTART</button>
+                <div id="btn-plays">
+                    <button type="button" class="btn1" onclick="lancar1()">1</button>
+                    <button type="button" class="btn2" onclick="lancar2()">2</button>
+                    <button type="button" class="btn3" onclick="lancar3()">3</button>
+                </div>
+                    
+            </div>
+           
+            <p id="score"></p>
+            <p id="winner"></p>
+            
+        </div>
+    </main>
+
+    
+    
+    <footer>
+        <p> ©Desenvolvido por Derek Lamego</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
